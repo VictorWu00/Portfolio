@@ -1,0 +1,85 @@
+/**********Banner**********/
+.banner {
+    color: black;
+    background:linear-gradient(45deg,#043fa5,#de46ee);
+    width: 100%;
+    /* height: 100vh; */
+    /* font-size: clamp(300px, 9vw ,700px); */
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+  }
+  
+  .banner .notShowGreeting {
+    visibility: hidden;
+  }
+  
+  .banner .greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner .greeting h1{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    font-size: clamp(35px, 12vw, 100px);
+  }
+  
+  .banner .greeting h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: clamp(30px, 10vw, 80px);
+  }
+  
+  .banner .title {
+    text-align: center;
+    font-weight: 700;
+    font-size: clamp(30px, 10vw, 80px);
+  }
+  
+  .banner .social-icon {
+    margin-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .banner .social-icon a {
+    width: clamp(40px, 12vw, 100px);
+    height: clamp(40px, 12vw, 100px);
+    background: #fff;
+    display: flex;
+    border-radius: 50%;
+    margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  
+  .banner .social-icon a::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .banner .social-icon a:hover::before {
+    transform: scale(1.3);
+  }
+  
+  .banner .social-icon a img {
+    width: 70%;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .banner .social-icon a:hover img {
+    filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+  }

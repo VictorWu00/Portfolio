@@ -1,0 +1,80 @@
+/**********ProjectBanner**********/
+.projectBanner {
+    color: black;
+    background:linear-gradient(45deg,#043fa5,#de46ee);
+    width: 100%;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+}
+
+.projectBanner .header {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.projectBanner .header h1 {
+    font-size: clamp(30px, 4vw, 40px) ;
+    font-weight: 400;
+    color: black;
+    padding-bottom: 15px;
+}
+
+.projectBanner .header span {
+    font-size: clamp(15px, 2vw, 20px);
+    font-weight: 400;
+}
+
+.projectBanner .project {
+    padding: 40px;
+}
+
+.projectBanner .projBox {
+    position: relative;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 3px #242121;
+    padding: 5px 10px;
+    background: linear-gradient(45deg,#9fc1fb,rgb(211, 194, 141));   
+    transition: transform 0.5s;
+}
+
+.projectBanner .projBox:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.projectBanner .projBox h1 {
+    font-size: clamp(15px, 2vw, 23px);
+    color: black;
+    text-align: center;
+}
+
+.projectBanner .projBox p {
+    font-size: clamp(13px, 1.5vw, 18px);
+    color: black;
+}
+
+@media (max-width: 1025px) {
+    .projectBanner .projBox {
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        border-radius: 20px;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 3px #242121;
+        padding: 20px 20px;
+        background: linear-gradient(45deg,#9fc1fb,rgb(211, 194, 141));   
+        transition: transform 0.5s;
+    }
+    
+    .projectBanner .projBox:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+}
